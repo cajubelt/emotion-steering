@@ -1,0 +1,8 @@
+torch
+transformers>=4.52.0
+accelerate
+nnsight
+numpy
+scipy
+tqdm
+matplotlib
