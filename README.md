@@ -93,6 +93,32 @@ python scripts/validate_vectors.py \
 
 The smoke run is meant to check the mechanics, not produce strong scientific evidence. The full run below is the better basis for interpreting vector quality.
 
+## Preliminary Result
+
+An end-to-end run produced qualitatively sensible steering behavior in the chat REPL. For example, using an `angry` vector on this prompt:
+
+```text
+Write a short text message someone sends after their coworker took credit for their work again. Keep it realistic and one paragraph.
+```
+
+The unsteered response was direct and confrontational:
+
+```text
+"Seriously? That was my idea. Let's keep the credit where it belongs."
+```
+
+Positive `angry` steering made the response more forceful:
+
+```text
+"Seriously? That was my idea. Don't do it again."
+```
+
+Negative `angry` steering softened the message and shifted it toward collaborative framing:
+
+```text
+"Just wanted to loop back on the Q3 report—it looks great, and I'm excited to see it land. Hope we can chat about the actual data breakdown soon so everyone has the full picture!"
+```
+
 ## Full Pipeline
 
 ### Step 1: Generate Stories
@@ -176,4 +202,4 @@ Gemma 4 layer counts vary by model size, so the scripts compute the target layer
 
 ## Current Status
 
-See `docs/status.md` for the latest verified commands and remaining work. Generated artifacts under `data/stories/`, `vectors/`, and `reports/` are ignored by git until there is a curated result worth committing.
+See `docs/status.md` for verified commands, the current end-to-end status, and remaining work. Generated artifacts under `data/stories/`, `vectors/`, and `reports/` are ignored by git unless a curated result is intentionally added.

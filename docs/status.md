@@ -1,6 +1,6 @@
 # Current Status
 
-This repository currently contains a working implementation scaffold for reproducing an activation-steering workflow on Gemma 4. The code supports:
+This repository contains a working implementation for reproducing an activation-steering workflow on Gemma 4. The code supports:
 
 - self-generation of emotion-labeled stories,
 - residual-stream activation capture from a dynamically discovered decoder layer,
@@ -23,6 +23,26 @@ python scripts/smoke_test_model.py --skip-generation
 
 The smoke test loaded `google/gemma-4-E2B-it`, found the decoder layers at `model.model.language_model.layers`, selected layer 23 of 35 as the default steering layer, and captured a residual-stream activation with shape `(1536,)`.
 
-## Not yet completed
+## End-to-end result
 
-The repository does not currently include generated story datasets, saved vectors, or validation reports. Those outputs are intentionally ignored by git because they are large/generated artifacts. The next research milestone is to run a small end-to-end pilot, inspect the generated stories, and include a short result summary with representative validation artifacts.
+An end-to-end run has been completed through story generation, vector extraction, validation, and interactive steering. One qualitative chat result:
+
+```text
+Prompt:
+Write a short text message someone sends after their coworker took credit for their work again. Keep it realistic and one paragraph.
+
+Base:
+"Seriously? That was my idea. Let's keep the credit where it belongs."
+
++angry:
+"Seriously? That was my idea. Don't do it again."
+
+-angry:
+"Just wanted to loop back on the Q3 report—it looks great, and I'm excited to see it land. Hope we can chat about the actual data breakdown soon so everyone has the full picture!"
+```
+
+The result is directionally consistent with the intended intervention: increasing the `angry` direction made the response more forceful, while subtracting the direction made it more diplomatic and collaborative.
+
+## Remaining work
+
+Generated story datasets, saved vectors, and validation reports are not currently tracked in git. They are ignored by default because they can be large and are generated artifacts. The next useful cleanup step is to curate a small result bundle, such as a short validation summary and one representative PCA plot, so readers can inspect the empirical output without rerunning the full pipeline.
