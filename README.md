@@ -1,4 +1,4 @@
-# Reproducing Emotion Steering Locally
+# Replicating Emotion Steering with Gemma 4
 
 This project reproduces the core workflow from Anthropic's "Emotion Concepts and their Function in a Large Language Model" using Gemma 4 through HuggingFace `transformers`.
 
@@ -9,10 +9,6 @@ The pipeline has five parts:
 3. Extract mean-difference emotion vectors from residual stream activations.
 4. Validate the vectors with logit-lens-style token projections, prompt probing, and a 2D PCA plot.
 5. Run an interactive chat loop with activation steering applied at inference time.
-
-## Why Not Ollama
-
-Ollama is great for serving quantized models, but it does not expose the residual stream or let us inject steering vectors during the forward pass. The scripts here use PyTorch hooks, which require the model to be loaded directly in `transformers`.
 
 ## Setup
 
@@ -27,7 +23,7 @@ pip install -r requirements.txt
 
 The scripts automatically prefer Apple Metal (`mps`) when available.
 
-By default, the project targets `google/gemma-4-E4B-it`, which is a better fit on higher-memory machines. If you want the lighter setup from the original 16GB plan, pass `--model-id google/gemma-4-E2B-it` to any script or set `EMOTION_STEERING_MODEL_ID=google/gemma-4-E2B-it`.
+By default, the project targets `google/gemma-4-E4B-it`, which is a better fit on higher-memory machines. If you want the lighter setup, pass `--model-id google/gemma-4-E2B-it` to any script or set `EMOTION_STEERING_MODEL_ID=google/gemma-4-E2B-it`.
 
 ## Smoke Test
 
@@ -70,7 +66,7 @@ python scripts/generate_stories.py \
 Notes:
 
 - The script uses the selected Gemma 4 model itself, matching the paper's self-generated-data setup.
-- It creates a review sample containing about 10% of the stories so you can spot-check them with Composer before moving on.
+- It creates a review sample containing about 10% of the stories so you can spot-check them before moving on.
 
 ## Step 2: Extract Vectors
 
