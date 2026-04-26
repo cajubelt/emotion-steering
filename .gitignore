@@ -6,3 +6,4 @@ data/stories/
 cache/
 vectors/
 reports/
+.env
