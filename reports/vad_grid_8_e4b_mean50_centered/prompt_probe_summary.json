@@ -1,0 +1,188 @@
+{
+  "config": {
+    "layer_idx": 27,
+    "start_token": 50,
+    "prompt_probe_start_token": 0,
+    "story_probe_start_token": 50,
+    "pooling_strategy": "mean",
+    "pool_size": 32,
+    "construction_mode": "grand_mean",
+    "pairwise_preset": null,
+    "num_vectors": 8,
+    "scoring": "centered_cosine"
+  },
+  "natural": {
+    "evaluated_prompts": 8,
+    "hit_at_1": 0.25,
+    "hit_at_3": 0.625,
+    "hit_at_5": 0.75,
+    "mean_rank": 3.5,
+    "mean_reciprocal_rank": 0.5,
+    "by_emotion": {
+      "afraid": {
+        "count": 1,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0
+      },
+      "angry": {
+        "count": 1,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "calm": {
+        "count": 1,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "excited": {
+        "count": 1,
+        "mean_rank": 4.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      },
+      "hopeful": {
+        "count": 1,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0
+      },
+      "nervous": {
+        "count": 1,
+        "mean_rank": 8.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      },
+      "reflective": {
+        "count": 1,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0
+      },
+      "sad": {
+        "count": 1,
+        "mean_rank": 8.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      }
+    }
+  },
+  "matched": {
+    "evaluated_prompts": 24,
+    "hit_at_1": 0.20833333333333334,
+    "hit_at_3": 0.5,
+    "hit_at_5": 0.75,
+    "mean_rank": 3.8333333333333335,
+    "mean_reciprocal_rank": 0.4188492063492064,
+    "by_emotion": {
+      "afraid": {
+        "count": 3,
+        "mean_rank": 3.3333333333333335,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666
+      },
+      "angry": {
+        "count": 3,
+        "mean_rank": 1.6666666666666667,
+        "hit_at_1": 0.6666666666666666,
+        "hit_at_3": 1.0
+      },
+      "calm": {
+        "count": 3,
+        "mean_rank": 4.0,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333
+      },
+      "excited": {
+        "count": 3,
+        "mean_rank": 4.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.6666666666666666
+      },
+      "hopeful": {
+        "count": 3,
+        "mean_rank": 5.333333333333333,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      },
+      "nervous": {
+        "count": 3,
+        "mean_rank": 3.6666666666666665,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.6666666666666666
+      },
+      "reflective": {
+        "count": 3,
+        "mean_rank": 5.666666666666667,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.3333333333333333
+      },
+      "sad": {
+        "count": 3,
+        "mean_rank": 3.0,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333
+      }
+    }
+  },
+  "story": {
+    "evaluated_prompts": 16,
+    "hit_at_1": 0.625,
+    "hit_at_3": 0.9375,
+    "hit_at_5": 1.0,
+    "mean_rank": 1.75,
+    "mean_reciprocal_rank": 0.7625000000000001,
+    "by_emotion": {
+      "afraid": {
+        "count": 2,
+        "mean_rank": 1.5,
+        "hit_at_1": 0.5,
+        "hit_at_3": 1.0
+      },
+      "angry": {
+        "count": 2,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "calm": {
+        "count": 2,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "excited": {
+        "count": 2,
+        "mean_rank": 2.5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0
+      },
+      "hopeful": {
+        "count": 2,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.5,
+        "hit_at_3": 1.0
+      },
+      "nervous": {
+        "count": 2,
+        "mean_rank": 3.0,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.5
+      },
+      "reflective": {
+        "count": 2,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "sad": {
+        "count": 2,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.5,
+        "hit_at_3": 1.0
+      }
+    }
+  }
+}

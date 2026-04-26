@@ -1,0 +1,178 @@
+{
+  "afraid": {
+    "top_tokens": [
+      "手が",
+      "Sinne",
+      "obstruct",
+      "Visible",
+      "condição",
+      "گرفتار",
+      "klar",
+      "마찬가지"
+    ],
+    "bottom_tokens": [
+      "enjoyed",
+      "enjoyment",
+      "earned",
+      "rarement",
+      "莓",
+      "เงิน",
+      "महंगाई",
+      "toFloat"
+    ]
+  },
+  "angry": {
+    "top_tokens": [
+      "ophobic",
+      "violated",
+      "bertanggung",
+      "😤",
+      "cobrar",
+      "犯",
+      "Repo",
+      "rectifier"
+    ],
+    "bottom_tokens": [
+      "flowering",
+      "trance",
+      "blossoming",
+      "fleshy",
+      "wondrous",
+      "paren",
+      "pian",
+      "tranqu"
+    ]
+  },
+  "calm": {
+    "top_tokens": [
+      "tranquil",
+      "enjoyment",
+      "flourish",
+      "weit",
+      "peaceful",
+      "tranqu",
+      "countryside",
+      "undisturbed"
+    ],
+    "bottom_tokens": [
+      "face",
+      "attempting",
+      "getName",
+      "Face",
+      "імені",
+      "Verifier",
+      "گرفتار",
+      "Face"
+    ]
+  },
+  "excited": {
+    "top_tokens": [
+      "pizzas",
+      "รางวัล",
+      "alors",
+      "confetti",
+      "盛",
+      "kemenangan",
+      "结束后",
+      "ancements"
+    ],
+    "bottom_tokens": [
+      "inconvenient",
+      "dormant",
+      "suffering",
+      "ascetic",
+      "dormancy",
+      "locality",
+      "संदिग्ध",
+      "متع"
+    ]
+  },
+  "hopeful": {
+    "top_tokens": [
+      "salaries",
+      "Congratulations",
+      "startY",
+      "benefiting",
+      "Congratulations",
+      "talents",
+      "pelatihan",
+      "packageName"
+    ],
+    "bottom_tokens": [
+      "lyophil",
+      "త్",
+      "Fehl",
+      "emptying",
+      "ຕົວ",
+      "dovuto",
+      "客",
+      "க்கோ"
+    ]
+  },
+  "nervous": {
+    "top_tokens": [
+      "hemod",
+      "hypers",
+      "موقف",
+      "अति",
+      "doubly",
+      "蹙",
+      "NumberOf",
+      "ਅ"
+    ],
+    "bottom_tokens": [
+      "WALL",
+      "sidewalks",
+      "orah",
+      "labels",
+      "gra",
+      "enrich",
+      "자들이",
+      "labels"
+    ]
+  },
+  "reflective": {
+    "top_tokens": [
+      "lessness",
+      "िकता",
+      "igkeit",
+      "ورح",
+      "étique",
+      "élie",
+      "oração",
+      "задума"
+    ],
+    "bottom_tokens": [
+      "electrop",
+      "باس",
+      "downarrow",
+      "unreasonable",
+      "ennen",
+      "шно",
+      "headerShown",
+      "لنا"
+    ]
+  },
+  "sad": {
+    "top_tokens": [
+      "sadness",
+      "melancholy",
+      "loneliness",
+      "არს",
+      "forl",
+      "LOSS",
+      "melanch",
+      "孤独"
+    ],
+    "bottom_tokens": [
+      "👍",
+      "}!",
+      "!\"",
+      "fang",
+      ")}^",
+      "ıklı",
+      "💪",
+      "upgrade"
+    ]
+  }
+}

@@ -1,0 +1,986 @@
+[
+  {
+    "expected_emotion": "afraid",
+    "prompt": "At a family dinner, a character feels afraid. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "calm",
+        0.05387217923998833
+      ],
+      [
+        "sad",
+        0.030479947105050087
+      ],
+      [
+        "afraid",
+        0.028688380494713783
+      ],
+      [
+        "nervous",
+        0.02754264697432518
+      ],
+      [
+        "excited",
+        0.02116663195192814
+      ],
+      [
+        "angry",
+        0.013620011508464813
+      ],
+      [
+        "hopeful",
+        -0.016233595088124275
+      ],
+      [
+        "reflective",
+        -0.1328013837337494
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "angry",
+    "prompt": "At a family dinner, a character feels angry. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "angry",
+        0.07935145497322083
+      ],
+      [
+        "calm",
+        0.06007921323180199
+      ],
+      [
+        "nervous",
+        0.03355022892355919
+      ],
+      [
+        "afraid",
+        0.02034105733036995
+      ],
+      [
+        "sad",
+        0.013094812631607056
+      ],
+      [
+        "excited",
+        0.009367361664772034
+      ],
+      [
+        "hopeful",
+        -0.04099925607442856
+      ],
+      [
+        "reflective",
+        -0.15745024383068085
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "calm",
+    "prompt": "At a family dinner, a character feels calm. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "calm",
+        0.10279148817062378
+      ],
+      [
+        "excited",
+        0.028551142662763596
+      ],
+      [
+        "sad",
+        0.027138367295265198
+      ],
+      [
+        "hopeful",
+        0.021655065938830376
+      ],
+      [
+        "nervous",
+        0.01746789738535881
+      ],
+      [
+        "angry",
+        -0.020224187523126602
+      ],
+      [
+        "afraid",
+        -0.031650468707084656
+      ],
+      [
+        "reflective",
+        -0.11525759100914001
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "excited",
+    "prompt": "At a family dinner, a character feels excited. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "calm",
+        0.09888914227485657
+      ],
+      [
+        "excited",
+        0.03313035890460014
+      ],
+      [
+        "nervous",
+        0.027195708826184273
+      ],
+      [
+        "sad",
+        0.015296886675059795
+      ],
+      [
+        "angry",
+        0.01094216201454401
+      ],
+      [
+        "hopeful",
+        -0.005960579961538315
+      ],
+      [
+        "afraid",
+        -0.01522902213037014
+      ],
+      [
+        "reflective",
+        -0.13752560317516327
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "hopeful",
+    "prompt": "At a family dinner, a character feels hopeful. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "calm",
+        0.14309167861938477
+      ],
+      [
+        "excited",
+        0.051972854882478714
+      ],
+      [
+        "nervous",
+        0.04189112409949303
+      ],
+      [
+        "angry",
+        0.03301439434289932
+      ],
+      [
+        "hopeful",
+        -0.01433113869279623
+      ],
+      [
+        "afraid",
+        -0.05277392268180847
+      ],
+      [
+        "sad",
+        -0.05661136656999588
+      ],
+      [
+        "reflective",
+        -0.13187822699546814
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "nervous",
+    "prompt": "At a family dinner, a character feels nervous. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "sad",
+        0.05633380264043808
+      ],
+      [
+        "calm",
+        0.052435629069805145
+      ],
+      [
+        "nervous",
+        0.04703569784760475
+      ],
+      [
+        "afraid",
+        0.03855934739112854
+      ],
+      [
+        "angry",
+        0.03125714883208275
+      ],
+      [
+        "excited",
+        -0.02677071839570999
+      ],
+      [
+        "hopeful",
+        -0.03393837809562683
+      ],
+      [
+        "reflective",
+        -0.1434088945388794
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "reflective",
+    "prompt": "At a family dinner, a character feels reflective. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "calm",
+        0.1521451771259308
+      ],
+      [
+        "nervous",
+        0.0698220431804657
+      ],
+      [
+        "excited",
+        0.02485448680818081
+      ],
+      [
+        "angry",
+        0.0033066770993173122
+      ],
+      [
+        "hopeful",
+        -0.016926199197769165
+      ],
+      [
+        "afraid",
+        -0.040278613567352295
+      ],
+      [
+        "sad",
+        -0.08213506639003754
+      ],
+      [
+        "reflective",
+        -0.10487472265958786
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "sad",
+    "prompt": "At a family dinner, a character feels sad. Describe the next moment.",
+    "start_token": 0,
+    "token_count": 15,
+    "family_id": "family_dinner",
+    "top_matches": [
+      [
+        "sad",
+        0.0851689949631691
+      ],
+      [
+        "calm",
+        0.07526768743991852
+      ],
+      [
+        "excited",
+        0.017403140664100647
+      ],
+      [
+        "afraid",
+        0.016101118177175522
+      ],
+      [
+        "angry",
+        0.003733417484909296
+      ],
+      [
+        "nervous",
+        -0.002662980929017067
+      ],
+      [
+        "hopeful",
+        -0.02173597179353237
+      ],
+      [
+        "reflective",
+        -0.13954752683639526
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "afraid",
+    "prompt": "In a parking lot, a character feels afraid. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "angry",
+        0.05459992587566376
+      ],
+      [
+        "reflective",
+        0.03869011998176575
+      ],
+      [
+        "nervous",
+        0.03243877366185188
+      ],
+      [
+        "hopeful",
+        0.02514529973268509
+      ],
+      [
+        "sad",
+        -0.01246157567948103
+      ],
+      [
+        "afraid",
+        -0.025008425116539
+      ],
+      [
+        "calm",
+        -0.036464445292949677
+      ],
+      [
+        "excited",
+        -0.09823723137378693
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "angry",
+    "prompt": "In a parking lot, a character feels angry. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "reflective",
+        0.061692941933870316
+      ],
+      [
+        "hopeful",
+        0.06064599007368088
+      ],
+      [
+        "angry",
+        0.0417226180434227
+      ],
+      [
+        "sad",
+        0.034901734441518784
+      ],
+      [
+        "nervous",
+        -0.014474978670477867
+      ],
+      [
+        "afraid",
+        -0.015519564040005207
+      ],
+      [
+        "calm",
+        -0.06949321925640106
+      ],
+      [
+        "excited",
+        -0.1116299107670784
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "calm",
+    "prompt": "In a parking lot, a character feels calm. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "angry",
+        0.04866146296262741
+      ],
+      [
+        "sad",
+        0.04106615483760834
+      ],
+      [
+        "reflective",
+        0.03324045613408089
+      ],
+      [
+        "hopeful",
+        0.01456780731678009
+      ],
+      [
+        "nervous",
+        0.006493286229670048
+      ],
+      [
+        "afraid",
+        -0.016482297331094742
+      ],
+      [
+        "calm",
+        -0.042928505688905716
+      ],
+      [
+        "excited",
+        -0.09914837777614594
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "excited",
+    "prompt": "In a parking lot, a character feels excited. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "angry",
+        0.08323779702186584
+      ],
+      [
+        "nervous",
+        0.01828838512301445
+      ],
+      [
+        "hopeful",
+        0.016416462138295174
+      ],
+      [
+        "reflective",
+        0.012671909295022488
+      ],
+      [
+        "sad",
+        0.008913686498999596
+      ],
+      [
+        "afraid",
+        -0.011372831650078297
+      ],
+      [
+        "calm",
+        -0.04215477406978607
+      ],
+      [
+        "excited",
+        -0.10335719585418701
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "hopeful",
+    "prompt": "In a parking lot, a character feels hopeful. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "angry",
+        0.052850157022476196
+      ],
+      [
+        "nervous",
+        0.042369380593299866
+      ],
+      [
+        "reflective",
+        0.040021054446697235
+      ],
+      [
+        "calm",
+        0.023082884028553963
+      ],
+      [
+        "hopeful",
+        -0.01432432234287262
+      ],
+      [
+        "excited",
+        -0.045418646186590195
+      ],
+      [
+        "sad",
+        -0.05510416999459267
+      ],
+      [
+        "afraid",
+        -0.07382684201002121
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "nervous",
+    "prompt": "In a parking lot, a character feels nervous. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "hopeful",
+        0.05881739407777786
+      ],
+      [
+        "reflective",
+        0.05234052240848541
+      ],
+      [
+        "angry",
+        0.028313808143138885
+      ],
+      [
+        "sad",
+        0.027012471109628677
+      ],
+      [
+        "nervous",
+        -0.01011082623153925
+      ],
+      [
+        "afraid",
+        -0.017051760107278824
+      ],
+      [
+        "calm",
+        -0.0404234305024147
+      ],
+      [
+        "excited",
+        -0.10900473594665527
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "reflective",
+    "prompt": "In a parking lot, a character feels reflective. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "angry",
+        0.048234280198812485
+      ],
+      [
+        "reflective",
+        0.039324283599853516
+      ],
+      [
+        "nervous",
+        0.02226283773779869
+      ],
+      [
+        "hopeful",
+        0.012025952339172363
+      ],
+      [
+        "sad",
+        -0.008374720811843872
+      ],
+      [
+        "calm",
+        -0.018958523869514465
+      ],
+      [
+        "afraid",
+        -0.04968717694282532
+      ],
+      [
+        "excited",
+        -0.06525308638811111
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "sad",
+    "prompt": "In a parking lot, a character feels sad. Describe what they notice and do next.",
+    "start_token": 0,
+    "token_count": 18,
+    "family_id": "parking_lot",
+    "top_matches": [
+      [
+        "reflective",
+        0.05226767435669899
+      ],
+      [
+        "angry",
+        0.05034579709172249
+      ],
+      [
+        "hopeful",
+        0.043063998222351074
+      ],
+      [
+        "sad",
+        0.03291613608598709
+      ],
+      [
+        "nervous",
+        -0.004949841648340225
+      ],
+      [
+        "afraid",
+        -0.016177458688616753
+      ],
+      [
+        "calm",
+        -0.07054869830608368
+      ],
+      [
+        "excited",
+        -0.10088446736335754
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "afraid",
+    "prompt": "A character receives unexpected news and feels afraid. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "afraid",
+        0.0852169394493103
+      ],
+      [
+        "angry",
+        0.07410990446805954
+      ],
+      [
+        "nervous",
+        0.03558529168367386
+      ],
+      [
+        "excited",
+        0.011543230153620243
+      ],
+      [
+        "sad",
+        0.00198455061763525
+      ],
+      [
+        "calm",
+        -0.005723109468817711
+      ],
+      [
+        "hopeful",
+        -0.08270732313394547
+      ],
+      [
+        "reflective",
+        -0.11517377197742462
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "angry",
+    "prompt": "A character receives unexpected news and feels angry. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "angry",
+        0.1292334496974945
+      ],
+      [
+        "afraid",
+        0.09168632328510284
+      ],
+      [
+        "nervous",
+        0.039632879197597504
+      ],
+      [
+        "excited",
+        -0.0015138741582632065
+      ],
+      [
+        "sad",
+        -0.022672530263662338
+      ],
+      [
+        "calm",
+        -0.027069125324487686
+      ],
+      [
+        "hopeful",
+        -0.09130822122097015
+      ],
+      [
+        "reflective",
+        -0.12193870544433594
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "calm",
+    "prompt": "A character receives unexpected news and feels calm. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "afraid",
+        0.06866496056318283
+      ],
+      [
+        "angry",
+        0.053397949784994125
+      ],
+      [
+        "excited",
+        0.04752993583679199
+      ],
+      [
+        "calm",
+        0.029358090832829475
+      ],
+      [
+        "nervous",
+        0.025875136256217957
+      ],
+      [
+        "sad",
+        -0.015226651914417744
+      ],
+      [
+        "hopeful",
+        -0.08110562711954117
+      ],
+      [
+        "reflective",
+        -0.11933022737503052
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "excited",
+    "prompt": "A character receives unexpected news and feels excited. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "afraid",
+        0.07294890284538269
+      ],
+      [
+        "excited",
+        0.06758485734462738
+      ],
+      [
+        "angry",
+        0.051962945610284805
+      ],
+      [
+        "calm",
+        0.05046167969703674
+      ],
+      [
+        "nervous",
+        0.03988732770085335
+      ],
+      [
+        "sad",
+        -0.04600410535931587
+      ],
+      [
+        "hopeful",
+        -0.0756252110004425
+      ],
+      [
+        "reflective",
+        -0.14733049273490906
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "hopeful",
+    "prompt": "A character receives unexpected news and feels hopeful. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "excited",
+        0.07405529916286469
+      ],
+      [
+        "calm",
+        0.07272845506668091
+      ],
+      [
+        "nervous",
+        0.04160682111978531
+      ],
+      [
+        "angry",
+        0.04081454128026962
+      ],
+      [
+        "afraid",
+        0.03205133229494095
+      ],
+      [
+        "hopeful",
+        -0.06345272064208984
+      ],
+      [
+        "sad",
+        -0.09068760275840759
+      ],
+      [
+        "reflective",
+        -0.1042262390255928
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "nervous",
+    "prompt": "A character receives unexpected news and feels nervous. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "afraid",
+        0.12617337703704834
+      ],
+      [
+        "angry",
+        0.10248202085494995
+      ],
+      [
+        "nervous",
+        0.061873722821474075
+      ],
+      [
+        "sad",
+        0.02253861539065838
+      ],
+      [
+        "calm",
+        -0.012927563861012459
+      ],
+      [
+        "excited",
+        -0.059643324464559555
+      ],
+      [
+        "reflective",
+        -0.11851724982261658
+      ],
+      [
+        "hopeful",
+        -0.13069884479045868
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "reflective",
+    "prompt": "A character receives unexpected news and feels reflective. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "angry",
+        0.0746854692697525
+      ],
+      [
+        "nervous",
+        0.07031505554914474
+      ],
+      [
+        "afraid",
+        0.060914717614650726
+      ],
+      [
+        "calm",
+        0.05741580203175545
+      ],
+      [
+        "excited",
+        -0.0004913969896733761
+      ],
+      [
+        "sad",
+        -0.07240017503499985
+      ],
+      [
+        "reflective",
+        -0.09411950409412384
+      ],
+      [
+        "hopeful",
+        -0.11139445006847382
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "sad",
+    "prompt": "A character receives unexpected news and feels sad. Describe the immediate response.",
+    "start_token": 0,
+    "token_count": 14,
+    "family_id": "unexpected_news",
+    "top_matches": [
+      [
+        "afraid",
+        0.09077191352844238
+      ],
+      [
+        "angry",
+        0.0575067475438118
+      ],
+      [
+        "excited",
+        0.04321315139532089
+      ],
+      [
+        "sad",
+        0.02248961292207241
+      ],
+      [
+        "nervous",
+        0.01811617612838745
+      ],
+      [
+        "calm",
+        0.017398111522197723
+      ],
+      [
+        "hopeful",
+        -0.09983210265636444
+      ],
+      [
+        "reflective",
+        -0.13604684174060822
+      ]
+    ]
+  }
+]
