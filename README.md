@@ -185,7 +185,13 @@ EMOTION_STEERING_MODEL_ID=google/gemma-4-E4B-it python scripts/validate_vectors.
   --scoring centered_cosine
 ```
 
-The full per-prompt outputs and PCA plot live under `reports/vad_grid_8_e4b_mean50_centered/`.
+### PCA geometry
+
+![PCA of vad_grid_8 emotion vectors](reports/vad_grid_8_e4b_mean50_centered/emotion_geometry.png)
+
+The first principal component (28.2% variance) reads as a valence axis: the four negative-valence directions (`angry`, `afraid`, `nervous`, `sad`) cluster on the left, and the four positive-valence directions (`calm`, `excited`, `hopeful`, `reflective`) sit on the right. PC2 (20.0%) is less interpretable — `angry` sits well below the rest and the rest don't follow a clean arousal ordering. The most notable feature is that `afraid` and `nervous` land almost exactly on top of each other, which matches the cosine-similarity findings and means any conclusion that depends on telling those two directions apart should be discounted in this run.
+
+Full per-prompt JSON, the PCA coordinate CSV, and the source PNG live under `reports/vad_grid_8_e4b_mean50_centered/`.
 
 ## Corpus & Methodology
 
@@ -350,6 +356,10 @@ If some emotions produce weak stories during review, adjust the story prompt rat
 
 This is a small replication, not a paper. Known limitations:
 
-- **Single model size.** The two reported steering examples are on `gemma-4-E4B-it`; pipeline mechanics have been verified end-to-end on `gemma-4-E2B-it`. The directions and the layer-depth heuristic may not transfer cleanly to other variants without retuning.
-- **Qualitative validation.** Steering effects are illustrated with example completions rather than a quantitative sweep over steering strength × emotion × held-out prompt set.
-- **Confounded directions.** As noted in the Results section, the `angry` direction appears to encode situational framing alongside affect. A cleaner protocol would isolate valence from context, e.g. by contrasting matched-content stories that differ only in emotional tone.
+- **Single model size.** The reported steering examples are on `gemma-4-E4B-it`; pipeline mechanics have been verified end-to-end on `gemma-4-E2B-it`. The directions and the layer-depth heuristic may not transfer cleanly to other variants without retuning.
+- **Small held-out set.** The strongest split (`story`) is two prompts per emotion (16 total). Per-emotion numbers are suggestive rather than statistically robust; the right reading is "the strong directions are clearly above chance" rather than "this emotion is strictly better than that one."
+- **`centered_cosine` is a diagnostic, not a fix.** The flag subtracts the mean held-out activation before scoring, which removes a prompt-side common-mode bias that otherwise lets a single direction dominate the rankings. The vectors themselves are unchanged — under the default `cosine` scoring the same bias is still present. A real fix would address the bias at construction time (e.g. subtract a prompt-class mean during extraction) rather than at scoring time.
+- **Confounded directions.** As the negative-angry demo illustrates, the `angry` direction encodes a situational frame ("I was wronged, here is the response") alongside affect, not just a tone slider. A cleaner protocol would isolate valence from context, e.g. by contrasting matched-content stories that differ only in emotional tone.
+- **Near-neighbour geometry collapses.** The PCA shows `afraid` and `nervous` essentially on top of each other, and their pairwise cosine is the highest in the matrix. The other directions are reasonably separated, but anything an analysis says about the `afraid` / `nervous` distinction in this run should be treated as noise.
+- **Qualitative demos pin the seed.** The two demos in the Results section are at fixed `--seed` values chosen to surface a clean monotonic effect. A more robust qualitative writeup would average over multiple seeds and screen for cherry-picking.
+- **Blind topic judge is itself a model.** The pass that dropped `surprised` cuts label noise but is not ground truth; the surviving topics are ones a particular `gpt-5.4-mini` snapshot agreed with, not topics validated against humans.
