@@ -44,6 +44,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--vectors", type=Path, required=True)
     parser.add_argument("--report-dir", type=Path, default=REPORTS_DIR)
     parser.add_argument("--top-k", type=int, default=8)
+    parser.add_argument(
+        "--scoring",
+        choices=["dot", "cosine", "centered_cosine"],
+        default="cosine",
+        help=(
+            "How to score prompt activations against emotion vectors. "
+            "'cosine' (default) reproduces the historical reports. "
+            "'dot' is an unnormalised dot product. "
+            "'centered_cosine' subtracts the mean held-out prompt activation "
+            "before cosine scoring (diagnostic for prompt-side common-mode bias)."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -59,12 +71,28 @@ def pca_2d(matrix: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
 def compute_projection_scores(
     activation: torch.Tensor,
     vectors: dict[str, torch.Tensor],
+    *,
+    scoring: str = "cosine",
+    activation_offset: torch.Tensor | None = None,
 ) -> dict[str, float]:
+    a = activation.float()
+    if scoring == "centered_cosine":
+        if activation_offset is None:
+            raise ValueError("centered_cosine requires activation_offset")
+        a = a - activation_offset.float()
+
+    if scoring == "dot":
+        return {
+            emotion: float(torch.dot(a, vector.float()).item())
+            for emotion, vector in vectors.items()
+        }
+
+    a_normalized = a / a.norm().clamp_min(1e-8)
     projection_scores = {}
     for emotion, vector in vectors.items():
-        numerator = torch.dot(activation, vector.float())
-        denominator = activation.norm() * vector.float().norm()
-        projection_scores[emotion] = float((numerator / denominator.clamp_min(1e-8)).item())
+        v = vector.float()
+        v_normalized = v / v.norm().clamp_min(1e-8)
+        projection_scores[emotion] = float(torch.dot(a_normalized, v_normalized).item())
     return projection_scores
 
 
@@ -150,7 +178,7 @@ def main() -> None:
         }
     write_json(args.report_dir / "logit_lens.json", logit_lens)
 
-    prompt_results = []
+    natural_records = []
     for expected_emotion, prompt in NATURAL_PROMPTS.items():
         activation = capture_hidden_mean(
             loaded,
@@ -160,17 +188,9 @@ def main() -> None:
             pooling_strategy=pooling_strategy,
             pool_size=pool_size,
         )
-        projection_scores = compute_projection_scores(activation, vectors)
-        prompt_results.append(
-            {
-                "expected_emotion": expected_emotion,
-                "prompt": prompt,
-                "top_matches": ranked_matches(projection_scores),
-            }
-        )
-    write_json(args.report_dir / "prompt_probe_results.json", prompt_results)
+        natural_records.append((expected_emotion, prompt, activation))
 
-    matched_prompt_results = []
+    matched_records = []
     for family_id, template in MATCHED_PROMPT_FAMILIES.items():
         for expected_emotion in sorted(vectors):
             prompt = template.format(emotion=expected_emotion)
@@ -182,15 +202,48 @@ def main() -> None:
                 pooling_strategy=pooling_strategy,
                 pool_size=pool_size,
             )
-            projection_scores = compute_projection_scores(activation, vectors)
-            matched_prompt_results.append(
-                {
-                    "family_id": family_id,
-                    "expected_emotion": expected_emotion,
-                    "prompt": prompt,
-                    "top_matches": ranked_matches(projection_scores),
-                }
-            )
+            matched_records.append((family_id, expected_emotion, prompt, activation))
+
+    activation_offset = None
+    if args.scoring == "centered_cosine":
+        all_activations = torch.stack(
+            [rec[2] for rec in natural_records] + [rec[3] for rec in matched_records]
+        )
+        activation_offset = all_activations.mean(dim=0)
+
+    prompt_results = []
+    for expected_emotion, prompt, activation in natural_records:
+        projection_scores = compute_projection_scores(
+            activation,
+            vectors,
+            scoring=args.scoring,
+            activation_offset=activation_offset,
+        )
+        prompt_results.append(
+            {
+                "expected_emotion": expected_emotion,
+                "prompt": prompt,
+                "top_matches": ranked_matches(projection_scores),
+            }
+        )
+    write_json(args.report_dir / "prompt_probe_results.json", prompt_results)
+
+    matched_prompt_results = []
+    for family_id, expected_emotion, prompt, activation in matched_records:
+        projection_scores = compute_projection_scores(
+            activation,
+            vectors,
+            scoring=args.scoring,
+            activation_offset=activation_offset,
+        )
+        matched_prompt_results.append(
+            {
+                "family_id": family_id,
+                "expected_emotion": expected_emotion,
+                "prompt": prompt,
+                "top_matches": ranked_matches(projection_scores),
+            }
+        )
     write_json(args.report_dir / "matched_prompt_probe_results.json", matched_prompt_results)
 
     prompt_probe_summary = {
@@ -203,6 +256,7 @@ def main() -> None:
             "construction_mode": payload.get("construction_mode", "grand_mean"),
             "pairwise_preset": payload.get("pairwise_preset"),
             "num_vectors": len(vectors),
+            "scoring": args.scoring,
         },
         "natural": summarize_probe_results(prompt_results, available_emotions=available_emotions),
         "matched": summarize_probe_results(matched_prompt_results, available_emotions=available_emotions),

@@ -1,0 +1,262 @@
+[
+  {
+    "expected_emotion": "happy",
+    "prompt": "My daughter just took her first steps today. What are some ways to celebrate this with our family?",
+    "top_matches": [
+      [
+        "reflective",
+        0.21229374408721924
+      ],
+      [
+        "hopeful",
+        0.13242784142494202
+      ],
+      [
+        "excited",
+        0.04327577352523804
+      ],
+      [
+        "sad",
+        -0.0020508579909801483
+      ],
+      [
+        "calm",
+        -0.027477864176034927
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "proud",
+    "prompt": "My son just graduated top of his class after years of struggling. How should we celebrate?",
+    "top_matches": [
+      [
+        "reflective",
+        0.11511074006557465
+      ],
+      [
+        "excited",
+        0.09833260625600815
+      ],
+      [
+        "hopeful",
+        0.053258877247571945
+      ],
+      [
+        "calm",
+        0.050938691943883896
+      ],
+      [
+        "afraid",
+        -0.04394633695483208
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "calm",
+    "prompt": "I'm sitting with tea and listening to the rain. What's a good book for a quiet afternoon?",
+    "top_matches": [
+      [
+        "calm",
+        0.13279438018798828
+      ],
+      [
+        "reflective",
+        0.10572914034128189
+      ],
+      [
+        "hopeful",
+        0.09015364944934845
+      ],
+      [
+        "excited",
+        0.05571383982896805
+      ],
+      [
+        "sad",
+        0.05559217929840088
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "desperate",
+    "prompt": "I've been unemployed for months, my savings are gone, and I just got an eviction notice. What do I do?",
+    "top_matches": [
+      [
+        "hopeful",
+        0.06935815513134003
+      ],
+      [
+        "sad",
+        0.06216970831155777
+      ],
+      [
+        "afraid",
+        0.054924558848142624
+      ],
+      [
+        "nervous",
+        -0.009427221491932869
+      ],
+      [
+        "angry",
+        -0.017908956855535507
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "angry",
+    "prompt": "My coworker took credit for my work again and I feel like screaming. How do I respond?",
+    "top_matches": [
+      [
+        "angry",
+        0.0691056028008461
+      ],
+      [
+        "reflective",
+        0.06801147013902664
+      ],
+      [
+        "nervous",
+        0.043883711099624634
+      ],
+      [
+        "sad",
+        0.02127044089138508
+      ],
+      [
+        "afraid",
+        0.010035335086286068
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "guilty",
+    "prompt": "I forgot my mother's birthday and she found out I was out partying instead. I feel awful.",
+    "top_matches": [
+      [
+        "afraid",
+        0.0857195109128952
+      ],
+      [
+        "sad",
+        0.0760098248720169
+      ],
+      [
+        "angry",
+        0.07066326588392258
+      ],
+      [
+        "nervous",
+        0.02793610282242298
+      ],
+      [
+        "excited",
+        -0.015247486531734467
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "sad",
+    "prompt": "My dog passed away this morning after fourteen years with me. I don't know what to do with his things.",
+    "top_matches": [
+      [
+        "reflective",
+        0.09542304277420044
+      ],
+      [
+        "hopeful",
+        0.07518044114112854
+      ],
+      [
+        "excited",
+        0.04506281390786171
+      ],
+      [
+        "calm",
+        -0.03261673450469971
+      ],
+      [
+        "afraid",
+        -0.03798264265060425
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "afraid",
+    "prompt": "There is someone trying to break into my apartment right now and my phone is dying. What should I do?",
+    "top_matches": [
+      [
+        "sad",
+        0.08451206237077713
+      ],
+      [
+        "afraid",
+        0.032138798385858536
+      ],
+      [
+        "nervous",
+        0.015010875649750233
+      ],
+      [
+        "reflective",
+        0.003567812964320183
+      ],
+      [
+        "hopeful",
+        0.0024199329782277346
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "nervous",
+    "prompt": "I have a job interview tomorrow for my dream role and I can't stop imagining everything going wrong.",
+    "top_matches": [
+      [
+        "reflective",
+        0.10596001148223877
+      ],
+      [
+        "excited",
+        0.08430421352386475
+      ],
+      [
+        "sad",
+        0.07597865909337997
+      ],
+      [
+        "hopeful",
+        0.044863030314445496
+      ],
+      [
+        "afraid",
+        0.00927434116601944
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "surprised",
+    "prompt": "My best friend of twenty years just confessed that much of their life story was made up. How do I process that?",
+    "top_matches": [
+      [
+        "reflective",
+        0.24847641587257385
+      ],
+      [
+        "hopeful",
+        0.10569752752780914
+      ],
+      [
+        "excited",
+        0.005235409364104271
+      ],
+      [
+        "nervous",
+        -0.0230803731828928
+      ],
+      [
+        "sad",
+        -0.051388442516326904
+      ]
+    ]
+  }
+]

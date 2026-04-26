@@ -1,0 +1,111 @@
+{
+  "config": {
+    "layer_idx": 27,
+    "start_token": 50,
+    "prompt_probe_start_token": 0,
+    "pooling_strategy": "mean",
+    "pool_size": 32,
+    "construction_mode": "grand_mean",
+    "pairwise_preset": null,
+    "num_vectors": 8,
+    "scoring": "centered_cosine"
+  },
+  "natural": {
+    "evaluated_prompts": 5,
+    "hit_at_1": 0.4,
+    "hit_at_3": 0.6,
+    "hit_at_5": 0.6,
+    "mean_rank": 3.2,
+    "mean_reciprocal_rank": 0.5666666666666667,
+    "by_emotion": {
+      "afraid": {
+        "count": 1,
+        "mean_rank": 2.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0
+      },
+      "angry": {
+        "count": 1,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "calm": {
+        "count": 1,
+        "mean_rank": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0
+      },
+      "nervous": {
+        "count": 1,
+        "mean_rank": 6.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      },
+      "sad": {
+        "count": 1,
+        "mean_rank": 6.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      }
+    }
+  },
+  "matched": {
+    "evaluated_prompts": 24,
+    "hit_at_1": 0.2916666666666667,
+    "hit_at_3": 0.5,
+    "hit_at_5": 0.7083333333333334,
+    "mean_rank": 3.5,
+    "mean_reciprocal_rank": 0.4715277777777778,
+    "by_emotion": {
+      "afraid": {
+        "count": 3,
+        "mean_rank": 3.3333333333333335,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666
+      },
+      "angry": {
+        "count": 3,
+        "mean_rank": 1.6666666666666667,
+        "hit_at_1": 0.6666666666666666,
+        "hit_at_3": 1.0
+      },
+      "calm": {
+        "count": 3,
+        "mean_rank": 3.6666666666666665,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333
+      },
+      "excited": {
+        "count": 3,
+        "mean_rank": 3.0,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666
+      },
+      "hopeful": {
+        "count": 3,
+        "mean_rank": 5.666666666666667,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0
+      },
+      "nervous": {
+        "count": 3,
+        "mean_rank": 3.3333333333333335,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.6666666666666666
+      },
+      "reflective": {
+        "count": 3,
+        "mean_rank": 4.333333333333333,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333
+      },
+      "sad": {
+        "count": 3,
+        "mean_rank": 3.0,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333
+      }
+    }
+  }
+}

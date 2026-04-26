@@ -1,0 +1,650 @@
+[
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "afraid",
+    "prompt": "At a family dinner, a character feels afraid. Describe the next moment.",
+    "top_matches": [
+      [
+        "calm",
+        0.045545630156993866
+      ],
+      [
+        "sad",
+        0.03373080864548683
+      ],
+      [
+        "afraid",
+        0.027082031592726707
+      ],
+      [
+        "excited",
+        0.02646300010383129
+      ],
+      [
+        "hopeful",
+        0.019498754292726517
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "angry",
+    "prompt": "At a family dinner, a character feels angry. Describe the next moment.",
+    "top_matches": [
+      [
+        "angry",
+        0.07734902948141098
+      ],
+      [
+        "calm",
+        0.05198470130562782
+      ],
+      [
+        "afraid",
+        0.018620887771248817
+      ],
+      [
+        "sad",
+        0.016046172007918358
+      ],
+      [
+        "nervous",
+        0.014595165848731995
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "calm",
+    "prompt": "At a family dinner, a character feels calm. Describe the next moment.",
+    "top_matches": [
+      [
+        "calm",
+        0.09530920535326004
+      ],
+      [
+        "hopeful",
+        0.057706356048583984
+      ],
+      [
+        "excited",
+        0.03389744460582733
+      ],
+      [
+        "sad",
+        0.030266523361206055
+      ],
+      [
+        "nervous",
+        -0.0017081964761018753
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "excited",
+    "prompt": "At a family dinner, a character feels excited. Describe the next moment.",
+    "top_matches": [
+      [
+        "calm",
+        0.09146974235773087
+      ],
+      [
+        "excited",
+        0.03867475315928459
+      ],
+      [
+        "hopeful",
+        0.029958274215459824
+      ],
+      [
+        "sad",
+        0.018284648656845093
+      ],
+      [
+        "nervous",
+        0.008054519072175026
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "hopeful",
+    "prompt": "At a family dinner, a character feels hopeful. Describe the next moment.",
+    "top_matches": [
+      [
+        "calm",
+        0.13804742693901062
+      ],
+      [
+        "excited",
+        0.05761528015136719
+      ],
+      [
+        "angry",
+        0.030549313873052597
+      ],
+      [
+        "nervous",
+        0.025149304419755936
+      ],
+      [
+        "hopeful",
+        0.017812233418226242
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "nervous",
+    "prompt": "At a family dinner, a character feels nervous. Describe the next moment.",
+    "top_matches": [
+      [
+        "sad",
+        0.060168396681547165
+      ],
+      [
+        "calm",
+        0.04389830678701401
+      ],
+      [
+        "afraid",
+        0.03711262717843056
+      ],
+      [
+        "angry",
+        0.028173796832561493
+      ],
+      [
+        "nervous",
+        0.02779264748096466
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "reflective",
+    "prompt": "At a family dinner, a character feels reflective. Describe the next moment.",
+    "top_matches": [
+      [
+        "calm",
+        0.14652572572231293
+      ],
+      [
+        "nervous",
+        0.0544460266828537
+      ],
+      [
+        "excited",
+        0.02928522229194641
+      ],
+      [
+        "hopeful",
+        0.012802580371499062
+      ],
+      [
+        "angry",
+        0.0003659334033727646
+      ]
+    ]
+  },
+  {
+    "family_id": "family_dinner",
+    "expected_emotion": "sad",
+    "prompt": "At a family dinner, a character feels sad. Describe the next moment.",
+    "top_matches": [
+      [
+        "sad",
+        0.08978848159313202
+      ],
+      [
+        "calm",
+        0.06764408946037292
+      ],
+      [
+        "excited",
+        0.022712409496307373
+      ],
+      [
+        "afraid",
+        0.014331902377307415
+      ],
+      [
+        "hopeful",
+        0.013849339447915554
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "afraid",
+    "prompt": "In a waiting room, a character feels afraid. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.12316745519638062
+      ],
+      [
+        "nervous",
+        0.05090757831931114
+      ],
+      [
+        "angry",
+        0.02528780698776245
+      ],
+      [
+        "sad",
+        -0.008390489965677261
+      ],
+      [
+        "hopeful",
+        -0.0349724255502224
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "angry",
+    "prompt": "In a waiting room, a character feels angry. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.11546558141708374
+      ],
+      [
+        "nervous",
+        0.04602843150496483
+      ],
+      [
+        "angry",
+        0.026179153472185135
+      ],
+      [
+        "sad",
+        0.0070931436493992805
+      ],
+      [
+        "hopeful",
+        -0.02397049590945244
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "calm",
+    "prompt": "In a waiting room, a character feels calm. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.13039252161979675
+      ],
+      [
+        "nervous",
+        0.029371580109000206
+      ],
+      [
+        "sad",
+        0.022132012993097305
+      ],
+      [
+        "angry",
+        0.014690475538372993
+      ],
+      [
+        "afraid",
+        -0.043774932622909546
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "excited",
+    "prompt": "In a waiting room, a character feels excited. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.09177549183368683
+      ],
+      [
+        "nervous",
+        0.04599622264504433
+      ],
+      [
+        "angry",
+        0.03846801444888115
+      ],
+      [
+        "sad",
+        -0.014446656219661236
+      ],
+      [
+        "calm",
+        -0.025633368641138077
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "hopeful",
+    "prompt": "In a waiting room, a character feels hopeful. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.1054377481341362
+      ],
+      [
+        "calm",
+        0.0849369466304779
+      ],
+      [
+        "nervous",
+        0.07739206403493881
+      ],
+      [
+        "angry",
+        -0.004068391397595406
+      ],
+      [
+        "excited",
+        -0.05707725137472153
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "nervous",
+    "prompt": "In a waiting room, a character feels nervous. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.10783183574676514
+      ],
+      [
+        "nervous",
+        0.0476442389190197
+      ],
+      [
+        "angry",
+        0.011331944726407528
+      ],
+      [
+        "sad",
+        0.008561579510569572
+      ],
+      [
+        "afraid",
+        -0.024607151746749878
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "reflective",
+    "prompt": "In a waiting room, a character feels reflective. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.14136169850826263
+      ],
+      [
+        "nervous",
+        0.03944341093301773
+      ],
+      [
+        "calm",
+        0.010368606075644493
+      ],
+      [
+        "hopeful",
+        -0.012035045772790909
+      ],
+      [
+        "angry",
+        -0.013954837806522846
+      ]
+    ]
+  },
+  {
+    "family_id": "waiting_room",
+    "expected_emotion": "sad",
+    "prompt": "In a waiting room, a character feels sad. Describe what they notice and do next.",
+    "top_matches": [
+      [
+        "reflective",
+        0.11352451145648956
+      ],
+      [
+        "nervous",
+        0.03859550878405571
+      ],
+      [
+        "angry",
+        0.02073270082473755
+      ],
+      [
+        "sad",
+        0.008384764194488525
+      ],
+      [
+        "hopeful",
+        -0.019895052537322044
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "afraid",
+    "prompt": "A character receives unexpected news and feels afraid. Describe the immediate response.",
+    "top_matches": [
+      [
+        "afraid",
+        0.08642436563968658
+      ],
+      [
+        "angry",
+        0.07368935644626617
+      ],
+      [
+        "nervous",
+        0.020219389349222183
+      ],
+      [
+        "excited",
+        0.016102494671940804
+      ],
+      [
+        "sad",
+        0.0043332539498806
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "angry",
+    "prompt": "A character receives unexpected news and feels angry. Describe the immediate response.",
+    "top_matches": [
+      [
+        "angry",
+        0.13063551485538483
+      ],
+      [
+        "afraid",
+        0.09303222596645355
+      ],
+      [
+        "nervous",
+        0.02448336035013199
+      ],
+      [
+        "excited",
+        0.0025567407719790936
+      ],
+      [
+        "sad",
+        -0.02118496596813202
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "calm",
+    "prompt": "A character receives unexpected news and feels calm. Describe the immediate response.",
+    "top_matches": [
+      [
+        "afraid",
+        0.0694563239812851
+      ],
+      [
+        "excited",
+        0.05338970571756363
+      ],
+      [
+        "angry",
+        0.05240323394536972
+      ],
+      [
+        "calm",
+        0.022708624601364136
+      ],
+      [
+        "nervous",
+        0.01048445887863636
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "excited",
+    "prompt": "A character receives unexpected news and feels excited. Describe the immediate response.",
+    "top_matches": [
+      [
+        "excited",
+        0.07398037612438202
+      ],
+      [
+        "afraid",
+        0.07386034727096558
+      ],
+      [
+        "angry",
+        0.05093931406736374
+      ],
+      [
+        "calm",
+        0.044772762805223465
+      ],
+      [
+        "nervous",
+        0.02547074668109417
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "hopeful",
+    "prompt": "A character receives unexpected news and feels hopeful. Describe the immediate response.",
+    "top_matches": [
+      [
+        "excited",
+        0.08032627403736115
+      ],
+      [
+        "calm",
+        0.06818979978561401
+      ],
+      [
+        "angry",
+        0.0395035594701767
+      ],
+      [
+        "afraid",
+        0.03154461458325386
+      ],
+      [
+        "nervous",
+        0.02816031128168106
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "nervous",
+    "prompt": "A character receives unexpected news and feels nervous. Describe the immediate response.",
+    "top_matches": [
+      [
+        "afraid",
+        0.1285528540611267
+      ],
+      [
+        "angry",
+        0.10285476595163345
+      ],
+      [
+        "nervous",
+        0.047442447394132614
+      ],
+      [
+        "sad",
+        0.025540683418512344
+      ],
+      [
+        "calm",
+        -0.02115483395755291
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "reflective",
+    "prompt": "A character receives unexpected news and feels reflective. Describe the immediate response.",
+    "top_matches": [
+      [
+        "angry",
+        0.07427629828453064
+      ],
+      [
+        "afraid",
+        0.06120658665895462
+      ],
+      [
+        "nervous",
+        0.05719316005706787
+      ],
+      [
+        "calm",
+        0.0519774965941906
+      ],
+      [
+        "excited",
+        0.003334951587021351
+      ]
+    ]
+  },
+  {
+    "family_id": "unexpected_news",
+    "expected_emotion": "sad",
+    "prompt": "A character receives unexpected news and feels sad. Describe the immediate response.",
+    "top_matches": [
+      [
+        "afraid",
+        0.09298568964004517
+      ],
+      [
+        "angry",
+        0.05696164816617966
+      ],
+      [
+        "excited",
+        0.04941295087337494
+      ],
+      [
+        "sad",
+        0.025837328284978867
+      ],
+      [
+        "calm",
+        0.010090782307088375
+      ]
+    ]
+  }
+]
