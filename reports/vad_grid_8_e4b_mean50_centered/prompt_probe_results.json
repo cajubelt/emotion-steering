@@ -2,260 +2,520 @@
   {
     "expected_emotion": "happy",
     "prompt": "My daughter just took her first steps today. What are some ways to celebrate this with our family?",
+    "start_token": 0,
+    "token_count": 20,
     "top_matches": [
       [
         "reflective",
-        0.21229374408721924
+        0.21934694051742554
       ],
       [
         "hopeful",
-        0.13242784142494202
+        0.12076766788959503
       ],
       [
         "excited",
-        0.04327577352523804
+        0.04154107719659805
       ],
       [
         "sad",
-        -0.0020508579909801483
+        0.0007376018911600113
       ],
       [
         "calm",
-        -0.027477864176034927
+        -0.02012350969016552
+      ],
+      [
+        "nervous",
+        -0.0898934155702591
+      ],
+      [
+        "afraid",
+        -0.10683277249336243
+      ],
+      [
+        "angry",
+        -0.16844654083251953
       ]
     ]
   },
   {
     "expected_emotion": "proud",
     "prompt": "My son just graduated top of his class after years of struggling. How should we celebrate?",
+    "start_token": 0,
+    "token_count": 18,
     "top_matches": [
       [
         "reflective",
-        0.11511074006557465
+        0.11859338730573654
       ],
       [
         "excited",
-        0.09833260625600815
-      ],
-      [
-        "hopeful",
-        0.053258877247571945
+        0.09758278727531433
       ],
       [
         "calm",
-        0.050938691943883896
+        0.05845946446061134
+      ],
+      [
+        "hopeful",
+        0.030586129054427147
       ],
       [
         "afraid",
-        -0.04394633695483208
+        -0.04365454614162445
+      ],
+      [
+        "nervous",
+        -0.053877152502536774
+      ],
+      [
+        "sad",
+        -0.08411376923322678
+      ],
+      [
+        "angry",
+        -0.12768593430519104
       ]
     ]
   },
   {
     "expected_emotion": "calm",
     "prompt": "I'm sitting with tea and listening to the rain. What's a good book for a quiet afternoon?",
+    "start_token": 0,
+    "token_count": 23,
     "top_matches": [
       [
         "calm",
-        0.13279438018798828
+        0.14070791006088257
       ],
       [
         "reflective",
-        0.10572914034128189
+        0.10773526877164841
       ],
       [
         "hopeful",
-        0.09015364944934845
-      ],
-      [
-        "excited",
-        0.05571383982896805
+        0.06807641685009003
       ],
       [
         "sad",
-        0.05559217929840088
+        0.05463215336203575
+      ],
+      [
+        "excited",
+        0.05331955850124359
+      ],
+      [
+        "afraid",
+        -0.0855674222111702
+      ],
+      [
+        "angry",
+        -0.13793355226516724
+      ],
+      [
+        "nervous",
+        -0.1807137131690979
       ]
     ]
   },
   {
     "expected_emotion": "desperate",
     "prompt": "I've been unemployed for months, my savings are gone, and I just got an eviction notice. What do I do?",
+    "start_token": 0,
+    "token_count": 26,
     "top_matches": [
       [
-        "hopeful",
-        0.06935815513134003
-      ],
-      [
         "sad",
-        0.06216970831155777
+        0.06261178851127625
       ],
       [
         "afraid",
-        0.054924558848142624
+        0.05822113901376724
+      ],
+      [
+        "hopeful",
+        0.048575934022665024
       ],
       [
         "nervous",
-        -0.009427221491932869
+        0.0029082694090902805
       ],
       [
         "angry",
-        -0.017908956855535507
+        -0.016222670674324036
+      ],
+      [
+        "reflective",
+        -0.025914765894412994
+      ],
+      [
+        "excited",
+        -0.04109502211213112
+      ],
+      [
+        "calm",
+        -0.06953571736812592
       ]
     ]
   },
   {
     "expected_emotion": "angry",
     "prompt": "My coworker took credit for my work again and I feel like screaming. How do I respond?",
+    "start_token": 0,
+    "token_count": 19,
     "top_matches": [
       [
         "angry",
-        0.0691056028008461
+        0.07362097501754761
       ],
       [
         "reflective",
-        0.06801147013902664
+        0.07053700089454651
       ],
       [
         "nervous",
-        0.043883711099624634
+        0.05888236314058304
       ],
       [
         "sad",
-        0.02127044089138508
+        0.020007334649562836
       ],
       [
         "afraid",
-        0.010035335086286068
+        0.01181359775364399
+      ],
+      [
+        "excited",
+        -0.06656862795352936
+      ],
+      [
+        "hopeful",
+        -0.08303719013929367
+      ],
+      [
+        "calm",
+        -0.12683242559432983
       ]
     ]
   },
   {
     "expected_emotion": "guilty",
     "prompt": "I forgot my mother's birthday and she found out I was out partying instead. I feel awful.",
+    "start_token": 0,
+    "token_count": 21,
     "top_matches": [
       [
         "afraid",
-        0.0857195109128952
+        0.08838914334774017
       ],
       [
         "sad",
-        0.0760098248720169
+        0.0751955434679985
       ],
       [
         "angry",
-        0.07066326588392258
+        0.07413826882839203
       ],
       [
         "nervous",
-        0.02793610282242298
+        0.04197050631046295
       ],
       [
         "excited",
-        -0.015247486531734467
+        -0.018867898732423782
+      ],
+      [
+        "reflective",
+        -0.04817470908164978
+      ],
+      [
+        "hopeful",
+        -0.05469406396150589
+      ],
+      [
+        "calm",
+        -0.15797734260559082
       ]
     ]
   },
   {
     "expected_emotion": "sad",
     "prompt": "My dog passed away this morning after fourteen years with me. I don't know what to do with his things.",
+    "start_token": 0,
+    "token_count": 24,
     "top_matches": [
       [
         "reflective",
-        0.09542304277420044
+        0.09878209233283997
       ],
       [
         "hopeful",
-        0.07518044114112854
+        0.05358514189720154
       ],
       [
         "excited",
-        0.04506281390786171
+        0.04315538704395294
       ],
       [
         "calm",
-        -0.03261673450469971
+        -0.02742934785783291
+      ],
+      [
+        "nervous",
+        -0.03572044521570206
       ],
       [
         "afraid",
-        -0.03798264265060425
+        -0.037703968584537506
+      ],
+      [
+        "angry",
+        -0.04578690975904465
+      ],
+      [
+        "sad",
+        -0.056272756308317184
       ]
     ]
   },
   {
     "expected_emotion": "afraid",
     "prompt": "There is someone trying to break into my apartment right now and my phone is dying. What should I do?",
+    "start_token": 0,
+    "token_count": 22,
     "top_matches": [
       [
         "sad",
-        0.08451206237077713
+        0.08490736782550812
       ],
       [
         "afraid",
-        0.032138798385858536
+        0.03433704003691673
       ],
       [
         "nervous",
-        0.015010875649750233
+        0.028154632076621056
       ],
       [
         "reflective",
-        0.003567812964320183
+        0.004168890882283449
+      ],
+      [
+        "excited",
+        -0.01898939348757267
       ],
       [
         "hopeful",
-        0.0024199329782277346
+        -0.020908841863274574
+      ],
+      [
+        "angry",
+        -0.05134708434343338
+      ],
+      [
+        "calm",
+        -0.05347948521375656
       ]
     ]
   },
   {
     "expected_emotion": "nervous",
     "prompt": "I have a job interview tomorrow for my dream role and I can't stop imagining everything going wrong.",
+    "start_token": 0,
+    "token_count": 21,
     "top_matches": [
       [
         "reflective",
-        0.10596001148223877
+        0.10921980440616608
       ],
       [
         "excited",
-        0.08430421352386475
+        0.08312322944402695
       ],
       [
         "sad",
-        0.07597865909337997
+        0.07609416544437408
       ],
       [
         "hopeful",
-        0.044863030314445496
+        0.021451285108923912
       ],
       [
         "afraid",
-        0.00927434116601944
+        0.01096472516655922
+      ],
+      [
+        "calm",
+        -0.0699000209569931
+      ],
+      [
+        "angry",
+        -0.0767958015203476
+      ],
+      [
+        "nervous",
+        -0.1415262073278427
       ]
     ]
   },
   {
     "expected_emotion": "surprised",
     "prompt": "My best friend of twenty years just confessed that much of their life story was made up. How do I process that?",
+    "start_token": 0,
+    "token_count": 24,
     "top_matches": [
       [
         "reflective",
-        0.24847641587257385
+        0.25630778074264526
       ],
       [
         "hopeful",
-        0.10569752752780914
+        0.08575530350208282
       ],
       [
         "excited",
-        0.005235409364104271
+        0.0022470392286777496
       ],
       [
         "nervous",
-        -0.0230803731828928
+        -0.011178744956851006
       ],
       [
         "sad",
-        -0.051388442516326904
+        -0.05462884157896042
+      ],
+      [
+        "calm",
+        -0.08674055337905884
+      ],
+      [
+        "angry",
+        -0.10164690762758255
+      ],
+      [
+        "afraid",
+        -0.12684127688407898
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "reflective",
+    "prompt": "I found an old notebook from a version of myself I barely recognize. Help me think through what has changed.",
+    "start_token": 0,
+    "token_count": 22,
+    "top_matches": [
+      [
+        "hopeful",
+        0.08282371610403061
+      ],
+      [
+        "reflective",
+        0.07145602256059647
+      ],
+      [
+        "afraid",
+        0.0033165710046887398
+      ],
+      [
+        "excited",
+        -0.009241202846169472
+      ],
+      [
+        "sad",
+        -0.01475565042346716
+      ],
+      [
+        "angry",
+        -0.023217950016260147
+      ],
+      [
+        "nervous",
+        -0.043774962425231934
+      ],
+      [
+        "calm",
+        -0.0640948936343193
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "hopeful",
+    "prompt": "After months of setbacks, I finally got one promising email about the project. How should I approach the next step?",
+    "start_token": 0,
+    "token_count": 23,
+    "top_matches": [
+      [
+        "reflective",
+        0.12554550170898438
+      ],
+      [
+        "hopeful",
+        0.07426125556230545
+      ],
+      [
+        "calm",
+        0.05232410132884979
+      ],
+      [
+        "excited",
+        0.034929126501083374
+      ],
+      [
+        "nervous",
+        0.03241569548845291
+      ],
+      [
+        "afraid",
+        -0.08587252348661423
+      ],
+      [
+        "sad",
+        -0.09539960324764252
+      ],
+      [
+        "angry",
+        -0.1481395661830902
+      ]
+    ]
+  },
+  {
+    "expected_emotion": "excited",
+    "prompt": "The tickets just went on sale for the trip I've dreamed about for years. What should I do first?",
+    "start_token": 0,
+    "token_count": 23,
+    "top_matches": [
+      [
+        "reflective",
+        0.17840361595153809
+      ],
+      [
+        "hopeful",
+        0.11355923116207123
+      ],
+      [
+        "sad",
+        0.03319953382015228
+      ],
+      [
+        "excited",
+        0.008748037740588188
+      ],
+      [
+        "afraid",
+        -0.021825235337018967
+      ],
+      [
+        "angry",
+        -0.0797494500875473
+      ],
+      [
+        "calm",
+        -0.09118741005659103
+      ],
+      [
+        "nervous",
+        -0.13853035867214203
       ]
     ]
   }

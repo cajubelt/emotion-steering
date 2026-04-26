@@ -79,7 +79,7 @@ Requirements:
 - The character should clearly experience the emotion: {emotion}.
 - Use 4 to 6 sentences.
 - Show the emotion through behavior, thoughts, dialogue, and decisions.
-- Avoid directly using the exact word "{emotion}" unless it feels unavoidable.
+- It is fine to use the word "{emotion}" naturally if it helps make the story clear.
 - Make the topic and details concrete and specific.
 - Do not add a title or bullet points.
 - Variant seed: {variant_idx}
